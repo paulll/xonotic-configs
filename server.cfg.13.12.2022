@@ -1,0 +1,121 @@
+sv_curl_defaulturl "http://z800.local/mapz/"
+g_maplist_shuffle 1
+sv_public 0
+hostname "z800"
+g_start_delay 0
+g_maplist ""
+g_maplist_votable 12
+timelimit_override 4
+gametype dm
+sv_vote_gametype 1
+sv_vote_gametype_options "dm tdm snafu"
+g_balance_teams 0
+g_powerups 1
+g_antilag 2
+g_player_crush 1
+g_player_crush_bounce 600
+g_player_crush_bounce_jump 4200
+g_akimbo 1
+g_akimbo_atspawns 1
+timelimit 4
+g_mod_weapons 1
+g_grappling_hook 1
+g_spawn_unique 1
+g_spawn_invisible 1
+g_dm_respawn_delay_max 0.1
+g_dm_respawn_delay_small 0.1
+sv_dodging_clientselect 1
+cl_dodging 1
+cl_spawn_near_teammate 1
+g_spawn_near_teammate_ignore_spawnpoint 2
+cl_beams_instantaimhack  1
+g_instagib_ammo_start 1000
+g_instagib_blaster_keepforce 1
+cl_vaporizerbeam 1
+g_walljump 1
+cl_polytrails 1
+chat_water 1
+sv_vote_commands "restart fraglimit chmap gotomap nextmap endmatch reducematchtime extendmatchtime timelimit bot_number"
+
+// fun things
+g_player_size 0.75
+
+// 0=normal, 1='pro', 2=nexuiz, 3=muffins
+sv_customhook_default 1
+g_shootfromeye 0
+g_grappling_hook_tarzan 2
+g_instagib_mirrordamage 1
+g_mirrordamage_virtual 0
+g_mirrordamage 0.45
+g_fullbrightitems 1
+g_fullbrightplayers 1
+sv_defaultplayermodel models/player/megaerebus.iqm
+g_warmup "0"
+g_warmup_limit "-1"
+
+
+g_vampirehook 1
+g_vampirehook_damage 10
+g_vampirehook_health_steal 1
+g_vampirehook_teamheal 1
+g_vampirehook_damagerate 0.1
+
+g_balance_vaporizer_primary_refire 1.25
+g_balance_vaporizer_primary_force 80000
+g_balance_vaporizer_primary_damage 100
+g_balance_vaporizer_secondary_radius "110"
+g_balance_vaporizer_secondary_refire "0.6"
+g_balance_vaporizer_secondary_speed "8000"
+
+
+
+
+sys_ticrate "0.0166667"
+
+/////////// GAME MODES 
+// ROCKET MINSTA
+//g_rm 0
+//g_rm_laser_count 5
+//g_rm_laser_radius 350
+//g_rm_laser_spread_random 1
+g_instagib 0
+
+
+
+g_overkill 1
+g_mod_balance Overkill
+
+g_fullbrightplayers 1
+g_respawn_ghosts 0
+g_nades_pokenade_monster_type anyrandom
+
+g_nades 1
+g_nades_spread 0
+g_nades_nade_refire 10
+g_nades_nade_newton_style 2
+
+dodging
+sv_dodging_wall_dodging 1
+
+g_spawn_near_teammate "!g_assault !g_freezetag"
+g_spawn_near_teammate_ignore_spawnpoint 1
+g_spawnshieldtime 0.5
+g_respawn_delay_forced 2
+
+g_ballistics_solidpenetration_exponent 0.25
+exec balance-overkill.cfg
+exec physicsOverkill.cfg
+g_balance_vaporizer_primary_force 800
+g_balance_vaporizer_primary_damage 80
+
+
+g_balance_grapplehook_refire "0"
+g_balance_grapplehook_speed_fly "6000"
+g_balance_grapplehook_speed_pull "5000"
+g_balance_grapplehook_stretch "80"
+g_balance_hook_primary_refire "0"
+g_balance_hook_secondary_damage "80"
+g_balance_hook_secondary_duration "2"
+
+
+g_nades_client_select 1
